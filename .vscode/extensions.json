@@ -2,6 +2,7 @@
     "recommendations": [
         "ms-dotnettools.csharp",
         "angular.ng-template",
-        "ms-dotnettools.csdevkit"
+        "ms-dotnettools.csdevkit",
+        "azurite.azurite"
     ]
 }
