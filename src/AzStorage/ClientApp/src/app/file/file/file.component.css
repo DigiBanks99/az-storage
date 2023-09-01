@@ -17,11 +17,15 @@
   flex: 3;
 }
 
-.icon {
+.icon,
+.file-info .icon,
+.header .icon {
   flex: 0;
   max-height: 1.5rem;
-  max-width: 1.5rem;
-  min-width: 1.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
 }
 
 .align-right {
@@ -40,6 +44,16 @@ form button {
   flex: 0;
 }
 
+video {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+svg {
+  height: 1.5rem;
+  cursor: pointer;
+}
+
   .file-info > *,
   .header > * {
     flex: 1;
@@ -50,10 +64,22 @@ form button {
     font-style: italic;
   }
 
-  .file-info .icon path {
+  .file-info .icon path,
+  .file-info .icon polygon {
     fill: dimgrey;
   }
 
-  .file-info:hover .icon path {
+  .file-info .icon svg:hover path,
+  .file-info .icon svg:hover polygon {
     fill: lightslategray;
+  }
+
+  .file-info .icon .icon-play path {
+    fill: none;
+    stroke: dimgray;
+  }
+
+  .file-info .icon svg.icon-play:hover path {
+    fill: none;
+    stroke: lightslategray;
   }
